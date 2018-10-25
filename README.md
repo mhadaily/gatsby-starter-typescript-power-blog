@@ -4,8 +4,11 @@ More features are coming, stay tuned!
 ### Description
 This is a standard starter with Typescript, TSLint, StyleLint, Prettier, Lint-Staged(Husky), Sass, StyleComponent, PWA
 
-![alt desktop](https://raw.githubusercontent.com/mhadaily/gatsby-starter-typescirpt-power-blog/master/desktop.png)
-![alt mobile](https://raw.githubusercontent.com/mhadaily/gatsby-starter-typescirpt-power-blog/master/mobile.png)
+#### Desktop
+<img src="https://raw.githubusercontent.com/mhadaily/gatsby-starter-typescirpt-power-blog/master/desktop.png">
+
+#### Mobile
+<img src="https://raw.githubusercontent.com/mhadaily/gatsby-starter-typescirpt-power-blog/master/mobile.png" width="300px">
 
 ### new project
 ```
