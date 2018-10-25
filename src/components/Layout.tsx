@@ -55,6 +55,9 @@ const GlobalStyle = createGlobalStyle`
       outline: none;
     }
   }
+  .textRight {
+    text-align:right;
+  }
 `;
 
 const Footer = styled.footer`

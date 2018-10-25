@@ -5,7 +5,7 @@ export default {
   siteTitleAlt: 'Typescript Power Blog - Gatsby Starter', // Alternative Site title for SEO
   siteUrl: 'https://typescript-power-blog.github.com', // Domain of your site. No trailing slash!
   siteLanguage: 'en', // Language Tag on <html> element
-  siteBanner: '/social/banner.jpg', // Your image for og:image tag. You can find it in the /static folder
+  siteBanner: '/assets/banner.jpg', // Your image for og:image tag. You can find it in the /static folder
   favicon: 'src/favicon.png', // Your image for favicons. You can find it in the /src folder
   siteDescription: 'Typescript Power Blog with big typography', // Your site description
   author: 'Majid Hajian', // Author for schemaORGJSONLD

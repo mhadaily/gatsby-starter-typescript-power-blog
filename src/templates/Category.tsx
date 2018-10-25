@@ -44,16 +44,16 @@ export default class Category extends React.PureComponent<PageProps> {
 
     return (
       <Layout>
+        <Helmet title={`${categoryName} | ${config.siteTitle}`} />
+        <Header>
+          <Link to="/">{config.siteTitle}</Link>
+          <SectionTitle>Category &ndash; {categoryName}</SectionTitle>
+          <Subline sectionTitle light={true}>
+            {subline} (See <Link to="/categories">all categories</Link>)
+          </Subline>
+        </Header>
         <Wrapper>
-          <Helmet title={`${categoryName} | ${config.siteTitle}`} />
-          <Header>
-            <Link to="/">{config.siteTitle}</Link>
-          </Header>
           <Content>
-            <SectionTitle>Category &ndash; {categoryName}</SectionTitle>
-            <Subline sectionTitle>
-              {subline} (See <Link to="/categories">all categories</Link>)
-            </Subline>
             {posts
               ? posts.map((post: any, index) => (
                   <Article

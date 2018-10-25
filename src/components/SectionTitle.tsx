@@ -1,15 +1,12 @@
 import styled from 'styled-components';
 
-export const SectionTitle = styled.div`
-  font-size: ${props => props.theme.fontSize.small};
-  text-transform: uppercase;
-  font-weight: bold;
+export const SectionTitle: any = styled.div`
+  font-size: ${props => props.theme.fontSize.big};
+  text-transform: ${(props: any) => (props.uppercase ? 'uppercase' : 'normal')};
   text-align: center;
-  color: ${props => props.theme.colors.grey.dark};
+  color: ${props => props.theme.colors.white};
   position: relative;
-  padding-bottom: 1rem;
-  margin-bottom: 4rem;
-
+  padding: 2rem 0;
   &:after {
     content: '';
     height: 1px;

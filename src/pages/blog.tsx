@@ -12,13 +12,13 @@ export default class BlogPage extends React.Component<PageProps> {
 
     return (
       <Layout>
+        <Helmet title={`Blog | ${config.siteTitle}`} />
+        <Header>
+          <Link to="/">{config.siteTitle}</Link>
+          <SectionTitle uppercase={true}>Latest stories ({totalCount})</SectionTitle>
+        </Header>
         <Wrapper>
-          <Helmet title={`Blog | ${config.siteTitle}`} />
-          <Header>
-            <Link to="/">{config.siteTitle}</Link>
-          </Header>
           <Content>
-            <SectionTitle>Latest stories ({totalCount})</SectionTitle>
             {edges.map(post => (
               <Article
                 title={post.node.frontmatter.title}

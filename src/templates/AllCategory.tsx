@@ -37,13 +37,13 @@ export default class AllCategoryTemplate extends React.PureComponent<PageProps> 
     if (categories) {
       return (
         <Layout>
+          <Helmet title={`Categories | ${config.siteTitle}`} />
+          <Header>
+            <Link to="/">{config.siteTitle}</Link>
+            <SectionTitle>Categories</SectionTitle>
+          </Header>
           <Wrapper>
-            <Helmet title={`Categories | ${config.siteTitle}`}/>
-            <Header>
-              <Link to="/">{config.siteTitle}</Link>
-            </Header>
             <Content>
-              <SectionTitle>Categories</SectionTitle>
               {categories.map((category, index: number) => (
                 <Title key={index}>
                   <Link to={`/categories/${kebabCase(category)}`}>{category}</Link>

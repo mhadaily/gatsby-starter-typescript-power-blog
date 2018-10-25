@@ -10,7 +10,6 @@ import config from '../../config/SiteConfig';
 import PageProps from '../models/PageProps';
 
 const Content = styled.div`
-  grid-column: 2;
   box-shadow: 0 4px 120px rgba(0, 0, 0, 0.1);
   border-radius: 1rem;
   padding: 2rem 4rem;
@@ -37,13 +36,13 @@ export default class AllTagTemplate extends React.PureComponent<PageProps> {
     if (tags) {
       return (
         <Layout>
+          <Helmet title={`Tags | ${config.siteTitle}`} />
+          <Header>
+            <Link to="/">{config.siteTitle}</Link>
+            <SectionTitle>Tags</SectionTitle>
+          </Header>
           <Wrapper>
-            <Helmet title={`Tags | ${config.siteTitle}`} />
-            <Header>
-              <Link to="/">{config.siteTitle}</Link>
-            </Header>
             <Content>
-              <SectionTitle>Tags</SectionTitle>
               {tags.map((tag, index: number) => (
                 <Title key={index}>
                   <Link to={`/tags/${kebabCase(tag)}`}>{tag}</Link>

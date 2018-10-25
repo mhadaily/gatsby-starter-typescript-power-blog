@@ -8,4 +8,3 @@ export * from './SEO';
 export * from './Subline';
 export * from './Wrapper';
 export * from './Content';
-export * from './ContentHomepage';
