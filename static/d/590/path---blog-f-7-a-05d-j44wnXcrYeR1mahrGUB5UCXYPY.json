@@ -1,0 +1,1 @@
+{"errors":[{"message":"Variable \"$skip\" of required type \"Int!\" was not provided.","locations":[{"line":2,"column":3}]},{"message":"Variable \"$limit\" of required type \"Int!\" was not provided.","locations":[{"line":3,"column":3}]}],"pageContext":{}}
