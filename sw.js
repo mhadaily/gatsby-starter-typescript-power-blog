@@ -26,27 +26,27 @@ workbox.clientsClaim();
  */
 self.__precacheManifest = [
   {
-    "url": "webpack-runtime-82768da23fb5d6e2466f.js"
+    "url": "webpack-runtime-e8e45a048dbd5e7eac6c.js"
   },
   {
-    "url": "app-bac4d0f14d6aaad37dce.js"
+    "url": "app-a8fb9cecc18d59efa0e9.js"
   },
   {
     "url": "component---node-modules-gatsby-plugin-offline-app-shell-js-6343b08ae213af306e85.js"
   },
   {
     "url": "index.html",
-    "revision": "33b575a06bfd76758697a3a98ad03566"
+    "revision": "9ad3a00b942f6ec4394e415c68930ebf"
   },
   {
     "url": "offline-plugin-app-shell-fallback/index.html",
-    "revision": "069ee7337332a133f185b2099599dd08"
+    "revision": "21f1ceeddede1b646fa59bda20a9a338"
   },
   {
     "url": "component---src-pages-index-tsx.0e4338761429b4eb16ac.css"
   },
   {
-    "url": "component---src-pages-index-tsx-122f2b40ca345272dce2.js"
+    "url": "component---src-pages-index-tsx-58f606421b51dbe2b0ce.js"
   },
   {
     "url": "0-bcd94526cd47bcb24de7.js"
@@ -59,7 +59,7 @@ self.__precacheManifest = [
     "url": "component---src-pages-404-tsx.0e4338761429b4eb16ac.css"
   },
   {
-    "url": "component---src-pages-404-tsx-b648eb5646e3aa35b1eb.js"
+    "url": "component---src-pages-404-tsx-6c04f302e3c38cf77595.js"
   },
   {
     "url": "static/d/164/path---404-html-516-62a-NZuapzHg3X9TaN1iIixfv1W23E.json",
@@ -71,13 +71,13 @@ self.__precacheManifest = [
   },
   {
     "url": "manifest.webmanifest",
-    "revision": "c3c948c58739d5966cab93cdb903d298"
+    "revision": "bccc47863f3eecf4c38397ecd17b95bd"
   }
 ].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute("/offline-plugin-app-shell-fallback/index.html", {
+workbox.routing.registerNavigationRoute("/gatsby-starter-typescirpt-power-blog/offline-plugin-app-shell-fallback/index.html", {
   whitelist: [/^[^?]*([^.?]{5}|\.html)(\?.*)?$/],
   blacklist: [/\?(.+&)?no-cache=1$/],
 });
