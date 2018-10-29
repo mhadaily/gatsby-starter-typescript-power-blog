@@ -28,6 +28,7 @@ gatsby new my_blog https://github.com/mhadaily/gatsby-starter-typescirpt-power-b
 - Markdown
 - Pagination
 - Git commit Hook - Lint-Staged(Husky)
+c
 
 ### Features
 - Category and Tag for post
@@ -35,3 +36,4 @@ gatsby new my_blog https://github.com/mhadaily/gatsby-starter-typescirpt-power-b
 - Format Safe by TSLint, StyleLint and Prettier with Lint-Staged(Husky)
 - Blog page
 - Pagination Ready
+- Ready to deploy to Github pages
