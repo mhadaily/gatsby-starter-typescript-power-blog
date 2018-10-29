@@ -6,7 +6,8 @@ export const SectionTitle: any = styled.div`
   text-align: center;
   color: ${props => props.theme.colors.white};
   position: relative;
-  padding: 2rem 0;
+  padding: 2rem 0 0;
+  margin-bottom: 2rem;
   &:after {
     content: '';
     height: 1px;
@@ -15,6 +16,6 @@ export const SectionTitle: any = styled.div`
     bottom: 0;
     left: 50%;
     margin-left: -25px;
-    background: ${props => props.theme.colors.grey.ultraLight};
+    background: ${props => props.theme.colors.white};
   }
 `;
