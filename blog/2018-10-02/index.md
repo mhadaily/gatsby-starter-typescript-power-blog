@@ -3,7 +3,7 @@ date: "2018-01-02"
 title: "Alper Musig Clare is a create author"
 category: "Technology"
 tags: ['Author', 'Book']
-banner: ""
+banner: "/assets/bg/1.jpg"
 ---
 
 # Heading 1
