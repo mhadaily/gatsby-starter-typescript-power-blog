@@ -30,7 +30,7 @@ export default class PostPage extends React.PureComponent<Props> {
           <>
             <SEO postPath={post.fields.slug} postNode={post} postSEO />
             <Helmet title={`${post.frontmatter.title} | ${config.siteTitle}`} />
-            <Header>
+            <Header banner={post.frontmatter.banner}>
               <Link to="/">{config.siteTitle}</Link>
               <SectionTitle>{post.frontmatter.title}</SectionTitle>
               <Subline light={true}>
@@ -73,6 +73,7 @@ export const postQuery = graphql`
         date(formatString: "DD.MM.YYYY")
         category
         tags
+        banner
       }
       timeToRead
     }

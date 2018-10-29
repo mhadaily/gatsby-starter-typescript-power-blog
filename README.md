@@ -26,6 +26,7 @@ gatsby new my_blog https://github.com/mhadaily/gatsby-starter-typescirpt-power-b
 - Prisim.js
 - Style Components
 - Markdown
+- Pagination
 - Git commit Hook - Lint-Staged(Husky)
 
 ### Features
@@ -33,3 +34,4 @@ gatsby new my_blog https://github.com/mhadaily/gatsby-starter-typescirpt-power-b
 - Type Safe by TypeScript
 - Format Safe by TSLint, StyleLint and Prettier with Lint-Staged(Husky)
 - Blog page
+- Pagination Ready

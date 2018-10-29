@@ -3,15 +3,16 @@ import styled from 'styled-components';
 import { darken, lighten } from 'polished';
 import rgba from 'polished/lib/color/rgba';
 import { media } from '../utils/media';
+import config from '../../config/SiteConfig';
 
-const Wrapper = styled.header`
+const HeaderWrapper = styled.header`
   position: relative;
   background: linear-gradient(
       -185deg,
       ${props => rgba(darken(0.1, props.theme.colors.primary), 0.6)},
       ${props => rgba(lighten(0.1, props.theme.colors.grey.dark), 0.8)}
     ),
-    url(/assets/bg.png) no-repeat;
+    url(${(props: any) => props.banner}) no-repeat;
   background-size: cover;
   padding: 8rem 2rem 10rem;
   text-align: center;
@@ -46,12 +47,17 @@ const Content = styled.div`
   }
 `;
 
-export class Header extends React.PureComponent<{}> {
+interface Props {
+  children: any;
+  banner?: string;
+}
+
+export class Header extends React.PureComponent<Props> {
   public render() {
     return (
-      <Wrapper>
+      <HeaderWrapper banner={this.props.banner || config.defaultBg}>
         <Content>{this.props.children}</Content>
-      </Wrapper>
+      </HeaderWrapper>
     );
   }
 }
