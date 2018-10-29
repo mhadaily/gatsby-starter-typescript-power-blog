@@ -5,7 +5,7 @@ import rgba from 'polished/lib/color/rgba';
 import { media } from '../utils/media';
 import config from '../../config/SiteConfig';
 
-const HeaderWrapper = styled.header`
+const HeaderWrapper: any = styled.header`
   position: relative;
   background: linear-gradient(
       -185deg,
