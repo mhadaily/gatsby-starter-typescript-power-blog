@@ -1,17 +1,27 @@
 // all scss if you like!
 //----------  responsive breakpoints
 //------------------------------------------------------------------------------
-@mixin breakpoint ($value) {
+@mixin breakpoint($value) {
   @if $value == 'phone' {
-    @media only screen and (min-width: 120px) and (max-width: 767px) { @content; }
+    @media only screen and (min-width: 120px) and (max-width: 767px) {
+      @content;
+    }
   } @else if $value == 'tablet' {
-    @media only screen and (min-width: 768px) and (max-width: 1024px) { @content; }
+    @media only screen and (min-width: 768px) and (max-width: 1024px) {
+      @content;
+    }
   } @else if $value == 'touch' {
-    @media only screen and (min-width: 120px) and (max-width: 1024px) { @content; }
+    @media only screen and (min-width: 120px) and (max-width: 1024px) {
+      @content;
+    }
   } @else if $value == 'desktop' {
-    @media only screen and (min-width: 1025px) { @content; }
+    @media only screen and (min-width: 1025px) {
+      @content;
+    }
   } @else {
-    @media only screen and (max-width: $value) { @content; }
+    @media only screen and (max-width: $value) {
+      @content;
+    }
   }
 }
 
@@ -27,4 +37,3 @@ $blue: #017ac7;
 // Transition
 $duration: 400ms;
 $easing: ease;
-

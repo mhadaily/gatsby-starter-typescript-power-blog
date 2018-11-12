@@ -13,6 +13,8 @@
     "build": "gatsby build",
     "start": "gatsby develop",
     "deploy": "gatsby build --prefix-paths && gh-pages -d public",
+    "lint": "tslint --project .",
+    "lint:fix": "tslint --fix --project .",
     "fix": "prettier --write 'src/**/*.{ts,tsx,scss,md}' && tslint --fix 'src/**/*.{ts,tsx}' -p tsconfig.json && stylelint --fix 'src/**/*.scss' "
   },
   "devDependencies": {
