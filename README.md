@@ -2,13 +2,19 @@
 
 I constantly update this theme as this is my main website theme
 
-## Success Stories
-
-- I am using this template for my website <https://www.majidhajian.com>
-
 ### Description
 
 This is a standard starter with Typescript, TSLint, StyleLint, Prettier, Lint-Staged(Husky), Sass, StyleComponent, PWA
+
+### new project
+
+```
+gatsby new my_blog https://github.com/mhadaily/gatsby-starter-typescript-power-blog
+```
+
+## Success Stories
+
+- I am using this template for my website <https://www.majidhajian.com>
 
 ### Features
 
@@ -44,12 +50,6 @@ This is a standard starter with Typescript, TSLint, StyleLint, Prettier, Lint-St
 #### Mobile
 
 <img src="https://raw.githubusercontent.com/mhadaily/gatsby-starter-typescript-power-blog/master/mobile.png" width="300px">
-
-### new project
-
-```
-gatsby new my_blog https://github.com/mhadaily/gatsby-starter-typescript-power-blog
-```
 
 ### Keywords
 
