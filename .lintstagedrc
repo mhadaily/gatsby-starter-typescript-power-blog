@@ -1,4 +1,4 @@
 {
-  "*.{ts,tsx}": ["npm run lint:fix", "git add"],
-  "{*.{scss,json,md}}": ["npm run formatAndFix", "git add"]
+  "*.{ts,tsx}": ["npm run lint:ts", "npm run lint:style", "npm run format"],
+  "*.{scss,json,md}": ["npm run lint:style", "npm run format"]
 }

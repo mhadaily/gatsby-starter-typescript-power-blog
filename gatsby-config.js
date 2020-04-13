@@ -75,5 +75,25 @@ module.exports = {
         icon: config.favicon,
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `images`,
+        path: `${__dirname}/static/assets`,
+      },
+    },
+    'gatsby-plugin-sharp',
+    'gatsby-transformer-sharp',
+    {
+      // Removes unused css rules
+      resolve: 'gatsby-plugin-purgecss',
+      options: {
+        // Activates purging in gatsby develop
+        develop: true,
+        // Purge only the main css file
+        purgeOnly: ['all.scss'],
+      },
+    },
+    `gatsby-plugin-netlify`,
   ],
 };

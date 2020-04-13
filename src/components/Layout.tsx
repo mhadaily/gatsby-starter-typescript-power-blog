@@ -2,8 +2,9 @@ import React from 'react';
 import { ThemeProvider } from 'styled-components';
 import theme from '../../config/Theme';
 import { GlobalStyle } from '../theme/GlobalStyle';
-import './layout.scss';
 import { Footer } from './Footer';
+
+import '../style/all.scss';
 
 const Layout = ({ children }: { children: any }) => {
   return (
