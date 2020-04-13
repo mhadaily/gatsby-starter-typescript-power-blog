@@ -14,6 +14,10 @@ This is a standard starter with Typescript, TSLint, StyleLint, Prettier, Lint-St
 
 <img src="https://raw.githubusercontent.com/mhadaily/gatsby-starter-typescript-power-blog/master/desktop.png">
 
+#### Dark Mode
+
+<img src="https://raw.githubusercontent.com/mhadaily/gatsby-starter-typescript-power-blog/master/dark.png">
+
 #### Mobile
 
 <img src="https://raw.githubusercontent.com/mhadaily/gatsby-starter-typescript-power-blog/master/mobile.png" width="300px">
