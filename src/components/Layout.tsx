@@ -21,12 +21,12 @@ const ModeButton = styled.button`
 `;
 
 const Layout = ({ children }: { children: any }) => {
-  const stored = typeof window !== undefined && localStorage.getItem('isDarkMode');
+  const stored = typeof window !== 'undefined' && localStorage.getItem('isDarkMode');
   const [isDarkMode, setIsDarkMode] = useState(stored === 'true' ? true : false);
 
   const toggelThemeMode = () => {
     setIsDarkMode(!isDarkMode);
-    if (typeof window !== undefined) {
+    if (typeof window !== 'undefined') {
       localStorage.setItem('isDarkMode', `${!isDarkMode}`);
     }
   };
