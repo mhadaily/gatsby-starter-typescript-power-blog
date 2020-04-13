@@ -1,14 +1,37 @@
-## Gatsby 2 Power blog starter with Typescript
+# Gatsby 2 Power blog starter with Typescript
 
-More features are coming, stay tuned!
+I constantly update this theme as this is my main website theme
 
-## Success Stories:
+## Success Stories
 
-- I am using this template for my website https://www.majidhajian.com
+- I am using this template for my website <https://www.majidhajian.com>
 
 ### Description
 
 This is a standard starter with Typescript, TSLint, StyleLint, Prettier, Lint-Staged(Husky), Sass, StyleComponent, PWA
+
+### Features
+
+- Mobile-First approach in development.
+- Styled Component implementation
+- SCSS Ready (if neccessary)
+- Themable ready (Light/Dark or even more)
+- TSLint & Prettier
+- a11y lint rules
+- very optimized images by Gatsby Image
+- Purge CSS
+- Offline support
+- Category and Tag for post
+- Type Safe by TypeScript
+- Format Safe by TSLint, StyleLint and Prettier with Lint-Staged(Husky) (Git Hooks)
+- Blog page
+- Syntax highlighting in code blocks.
+- Pagination Ready
+- Ready to deploy to Github pages
+- Automatic RSS generation.
+- Automatic Sitemap generation.
+- Automatic support for Google Tag Manager
+- Netlify deploy ready
 
 #### Desktop
 
@@ -16,7 +39,7 @@ This is a standard starter with Typescript, TSLint, StyleLint, Prettier, Lint-St
 
 #### Dark Mode
 
-<img src="https://raw.githubusercontent.com/mhadaily/gatsby-starter-typescript-power-blog/master/dark.png">
+<img src="https://raw.githubusercontent.com/mhadaily/gatsby-starter-typescript-power-blog/master/desktop-dark.png">
 
 #### Mobile
 
@@ -44,26 +67,3 @@ gatsby new my_blog https://github.com/mhadaily/gatsby-starter-typescript-power-b
 - Style Components
 - Markdown
 - Pagination
-
-### Features
-
-- Mobile-First approach in development.
-- Styled Component implementation
-- SCSS Ready (if neccessary)
-- Themable ready (Light/Dark or even more)
-- TSLint & Prettier
-- a11y lint rules
-- very optimized images by Gatsby Image
-- Purge CSS
-- Offline support
-- Category and Tag for post
-- Type Safe by TypeScript
-- Format Safe by TSLint, StyleLint and Prettier with Lint-Staged(Husky) (Git Hooks)
-- Blog page
-- Syntax highlighting in code blocks.
-- Pagination Ready
-- Ready to deploy to Github pages
-- Automatic RSS generation.
-- Automatic Sitemap generation.
-- Automatic support for Google Tag Manager
-- Netlify deploy ready
