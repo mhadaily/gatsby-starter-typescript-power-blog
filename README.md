@@ -36,11 +36,14 @@ gatsby new my_blog https://github.com/mhadaily/gatsby-starter-typescript-power-b
 
 ### Features
   - Mobile-First approach in development.
+  - Styled Component implementation 
+  - SCSS Ready (if neccessary)
+  - Themable ready (Light/Dark or even more)
   - TSLint & Prettier
   - Offline support
   - Category and Tag for post
   - Type Safe by TypeScript
-  - Format Safe by TSLint, StyleLint and Prettier with Lint-Staged(Husky)
+  - Format Safe by TSLint, StyleLint and Prettier with Lint-Staged(Husky) (Git Hooks)
   - Blog page
   - Syntax highlighting in code blocks.
   - Pagination Ready
