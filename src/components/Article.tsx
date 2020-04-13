@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Link } from 'gatsby';
-import kebabCase from 'lodash/kebabCase';
+import { kebabCase } from 'lodash';
 import { Subline } from './Subline';
 
 const Post = styled.article`
@@ -13,7 +13,7 @@ const Post = styled.article`
 
 const Title = styled.h2`
   position: relative;
-  text-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+  text-shadow: 0 1.2rem 3rem rgba(0, 0, 0, 0.15);
   margin-bottom: 0.75rem;
 `;
 
@@ -41,23 +41,21 @@ interface Props {
   category: string;
 }
 
-export class Article extends React.PureComponent<Props> {
-  public render() {
-    const { title, date, excerpt, slug, timeToRead, category } = this.props;
-    const firstChar = title.charAt(0);
+const Article = ({ title, date, excerpt, slug, timeToRead, category }: Props) => {
+  const firstChar = title.charAt(0);
+  return (
+    <Post>
+      <Title>
+        <Initiale>{firstChar}</Initiale>
+        <Link to={`/blog/${slug}`}>{title}</Link>
+      </Title>
+      <Subline>
+        {date} &mdash; {timeToRead} Min Read &mdash; In
+        <Link to={`/categories/${kebabCase(category)}`}> {category}</Link>
+      </Subline>
+      <Excerpt>{excerpt}</Excerpt>
+    </Post>
+  );
+};
 
-    return (
-      <Post>
-        <Title>
-          <Initiale>{firstChar}</Initiale>
-          <Link to={`/blog/${slug}`}>{title}</Link>
-        </Title>
-        <Subline>
-          {date} &mdash; {timeToRead} Min Read &mdash; In
-          <Link to={`/categories/${kebabCase(category)}`}> {category}</Link>
-        </Subline>
-        <Excerpt>{excerpt}</Excerpt>
-      </Post>
-    );
-  }
-}
+export { Article };

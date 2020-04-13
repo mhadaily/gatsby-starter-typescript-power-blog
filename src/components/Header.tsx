@@ -1,18 +1,17 @@
 import React from 'react';
 import styled from 'styled-components';
-import { darken, lighten } from 'polished';
-import rgba from 'polished/lib/color/rgba';
+import { darken, lighten, rgba } from 'polished';
 import { media } from '../utils/media';
 import config from '../../config/SiteConfig';
 
-const HeaderWrapper: any = styled.header`
+const HeaderWrapper = styled.header<{ banner: string }>`
   position: relative;
   background: linear-gradient(
       -185deg,
-      ${props => rgba(darken(0.1, props.theme.colors.primary), 0.6)},
-      ${props => rgba(lighten(0.1, props.theme.colors.grey.dark), 0.8)}
+      ${(props) => rgba(darken(0.1, props.theme.colors.primary), 0.6)},
+      ${(props) => rgba(lighten(0.1, props.theme.colors.grey.dark), 0.8)}
     ),
-    url(${(props: any) => props.banner}) no-repeat;
+    url(${(props) => props.banner}) no-repeat;
   background-size: cover;
   padding: 8rem 2rem 10rem;
   text-align: center;
@@ -52,12 +51,12 @@ interface Props {
   banner?: string;
 }
 
-export class Header extends React.PureComponent<Props> {
-  public render() {
-    return (
-      <HeaderWrapper banner={this.props.banner || config.defaultBg}>
-        <Content>{this.props.children}</Content>
-      </HeaderWrapper>
-    );
-  }
-}
+const Header = (props: Props) => {
+  return (
+    <HeaderWrapper banner={props.banner || config.defaultBg}>
+      <Content>{props.children}</Content>
+    </HeaderWrapper>
+  );
+};
+
+export { Header };

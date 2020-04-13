@@ -1,7 +1,6 @@
 {
-  "plugins": [
-    "stylelint-scss"
-  ],
+  "extends": ["stylelint-config-recommended", "stylelint-config-styled-components"],
+  "plugins": ["stylelint-scss"],
   "rules": {
     "scss/dollar-variable-pattern": null,
     "scss/selector-no-redundant-nesting-selector": true,

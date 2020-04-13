@@ -75,5 +75,5 @@ module.exports = {
         icon: config.favicon,
       },
     },
-  ]
+  ],
 };

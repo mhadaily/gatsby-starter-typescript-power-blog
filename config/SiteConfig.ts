@@ -31,6 +31,6 @@ export default {
   siteFBAppID: '',
 
   //
-  Google_Tag_Manager_ID: 'GTM-MVP42QK',
+  Google_Tag_Manager_ID: 'YOU-TAG-ID',
   POST_PER_PAGE: 4,
 };

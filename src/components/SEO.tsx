@@ -1,6 +1,5 @@
-/* eslint-disable react/require-default-props */
 import React from 'react';
-import Helmet from 'react-helmet';
+import { Helmet } from 'react-helmet';
 import config from '../../config/SiteConfig';
 import Post from '../models/Post';
 

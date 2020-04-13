@@ -1,10 +1,10 @@
 import styled from 'styled-components';
 
-export const SectionTitle: any = styled.div`
-  font-size: ${props => props.theme.fontSize.big};
-  text-transform: ${(props: any) => (props.uppercase ? 'uppercase' : 'normal')};
+export const SectionTitle: any = styled.div<{ uppercase: boolean }>`
+  font-size: ${(props) => props.theme.fontSize.big};
+  text-transform: ${(props) => (props.uppercase ? 'uppercase' : 'normal')};
   text-align: center;
-  color: ${props => props.theme.colors.white};
+  color: ${(props) => props.theme.colors.white};
   position: relative;
   padding: 2rem 0 0;
   margin-bottom: 2rem;
@@ -16,6 +16,6 @@ export const SectionTitle: any = styled.div`
     bottom: 0;
     left: 50%;
     margin-left: -25px;
-    background: ${props => props.theme.colors.white};
+    background: ${(props) => props.theme.colors.white};
   }
 `;
