@@ -4,7 +4,7 @@ export const SectionTitle: any = styled.div<{ uppercase: boolean }>`
   font-size: ${(props) => props.theme.fontSize.big};
   text-transform: ${(props) => (props.uppercase ? 'uppercase' : 'normal')};
   text-align: center;
-  color: ${(props) => props.theme.colors.white};
+  color: ${(props) => props.theme.colors.bg};
   position: relative;
   padding: 2rem 0 0;
   margin-bottom: 2rem;

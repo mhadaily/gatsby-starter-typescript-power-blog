@@ -32,7 +32,7 @@ const GridRow: any = styled.div`
       ? `linear-gradient(
       -185deg,
       ${rgba(darken(0.1, props.theme.colors.primary), 0.7)}, 
-      ${rgba(lighten(0.1, props.theme.colors.grey.dark), 0.9)}), url(${config.defaultBg}) no-repeat`
+      ${rgba(lighten(0.1, props.theme.colors.black), 0.9)}), url(${config.defaultBg}) no-repeat`
       : null};
   background-size: cover;
   padding: 2rem 4rem;

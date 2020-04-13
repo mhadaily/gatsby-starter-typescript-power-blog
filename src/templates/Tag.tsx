@@ -17,7 +17,7 @@ export default (props: PageProps) => {
       <Header>
         <Link to="/">{config.siteTitle}</Link>
         <SectionTitle>Tag &ndash; {tagName}</SectionTitle>
-        <Subline sectionTitle={true} light={true}>
+        <Subline sectionTitle={true}>
           {subline} (See <Link to="/tags">all tags</Link>)
         </Subline>
       </Header>

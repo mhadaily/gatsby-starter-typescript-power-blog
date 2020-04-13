@@ -3,7 +3,6 @@ import { Link } from 'gatsby';
 import styled from 'styled-components';
 import { darken } from 'polished';
 import { media } from '../utils/media';
-import theme from '../../config/Theme';
 
 export const PaginationContainer = styled.div`
   text-align: center;
@@ -14,7 +13,7 @@ export const PaginationContent = styled.div`
   display: inline-block;
   padding: 0 2.5rem;
   border-radius: 3.5rem;
-  background-color: #eee;
+  background-color: ${(props) => props.theme.colors.grey.ultraLight};
 
   @media ${media.phone} {
     padding: 0 1rem;
@@ -24,14 +23,14 @@ export const PaginationContent = styled.div`
     display: block;
     float: left;
     transition: 400ms ease;
-    color: ${theme.colors.grey.light};
+    color: ${(props) => props.theme.colors.grey.dark};
     letter-spacing: 0.1em;
     padding: 1rem;
 
     &:hover,
     &.current {
-      background-color: ${darken(0.2, theme.colors.primary)};
-      color: ${theme.colors.white};
+      background-color: ${(props) => darken(0.2, props.theme.colors.primary)};
+      color: ${(props) => props.theme.colors.white};
     }
 
     &.prev {
@@ -45,7 +44,7 @@ export const PaginationContent = styled.div`
     &.prev:hover,
     &.next:hover {
       background-color: transparent;
-      color: ${darken(0.2, theme.colors.primary)};
+      color: ${(props) => darken(0.2, props.theme.colors.primary)};
     }
 
     @media ${media.tablet} {

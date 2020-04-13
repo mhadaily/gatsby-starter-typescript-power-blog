@@ -3,5 +3,8 @@
   "extends": ["tslint:latest", "tslint-react", "tslint-config-prettier", "tslint-react-a11y"],
   "rules": {
     "prettier": true
+  },
+  "linterOptions": {
+    "exclude": ["bin", "**/*.d.ts", "**/*.json"]
   }
 }

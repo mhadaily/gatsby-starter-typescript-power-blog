@@ -1,5 +1,4 @@
 import { createGlobalStyle } from 'styled-components';
-import theme from '../../config/Theme';
 import { media } from '../utils/media';
 import { reset } from './Reset';
 
@@ -9,26 +8,26 @@ const GlobalStyle = createGlobalStyle`
    /* font-size: 62.5%; 62.5% of 16px = 10px */
  /* } */
   ::selection {
-    color: ${theme.colors.bg};
-    background: ${theme.colors.primary};
+    color: ${(props) => props.theme.colors.bg};
+    background: ${(props) => props.theme.colors.primary};
   }
   body {
-    background: ${theme.colors.bg};
-    color: ${theme.colors.grey.default};
+    background: ${(props) => props.theme.colors.bg};
+    color: ${(props) => props.theme.colors.grey.default};
     @media ${media.phone} {
       font-size: 1.4rem;
     }
   }
   a {
-    color: ${theme.colors.grey.dark};
+    color: ${(props) => props.theme.colors.grey.dark};
     text-decoration: none;
-    transition: all ${theme.transitions.normal};
+    transition: all ${(props) => props.theme.transitions.normal};
   }
   a:hover {
-    color: ${theme.colors.primary};
+    color: ${(props) => props.theme.colors.primary};
   }
   h1, h2, h3, h4 {
-    color: ${theme.colors.grey.dark};
+    color: ${(props) => props.theme.colors.grey.dark};
   }
   blockquote {
     font-style: italic;
@@ -38,14 +37,14 @@ const GlobalStyle = createGlobalStyle`
   blockquote:before {
     content: "";
     position: absolute;
-    background: ${theme.colors.primary};
+    background: ${(props) => props.theme.colors.primary};
     height: 100%;
     width: 0.6rem;
     margin-left: -1.6rem;
   }
   label {
     margin-bottom: .5rem;
-    color: ${theme.colors.grey.dark};
+    color: ${(props) => props.theme.colors.grey.dark};
   }
   input, textarea {
     border-radius: .5rem;

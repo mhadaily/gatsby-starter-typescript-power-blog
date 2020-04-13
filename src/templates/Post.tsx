@@ -41,7 +41,7 @@ export default (props: Props) => {
           <Header banner={post.frontmatter.banner}>
             <Link to="/">{config.siteTitle}</Link>
             <SectionTitle>{post.frontmatter.title}</SectionTitle>
-            <Subline light={true}>
+            <Subline>
               {post.frontmatter.date} &mdash; {post.timeToRead} Min Read &mdash; In{' '}
               <Link to={`/categories/${kebabCase(post.frontmatter.category)}`}>
                 {post.frontmatter.category}
