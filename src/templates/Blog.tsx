@@ -13,7 +13,7 @@ interface Props {
   };
 }
 
-const BlogPage = (props: Props) => {
+export default (props: Props) => {
   const { currentPage, totalPages } = props.pageContext;
 
   const { data } = props;
@@ -45,7 +45,6 @@ const BlogPage = (props: Props) => {
     </Layout>
   );
 };
-export default BlogPage;
 
 export const BlogQuery = graphql`
   query($skip: Int!, $limit: Int!) {

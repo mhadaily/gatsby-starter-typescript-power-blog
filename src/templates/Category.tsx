@@ -6,7 +6,7 @@ import config from '../../config/SiteConfig';
 import { kebabCase } from 'lodash';
 import PageProps from '../models/PageProps';
 
-const Category = (props: PageProps) => {
+export default (props: PageProps) => {
   const { posts, categoryName } = props.pathContext;
   const totalCount = posts ? posts.length : 0;
   const subline = `${totalCount} post${totalCount === 1 ? '' : 's'} tagged with "${categoryName}"`;
@@ -41,5 +41,3 @@ const Category = (props: PageProps) => {
     </Layout>
   );
 };
-
-export default Category;

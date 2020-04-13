@@ -29,7 +29,7 @@ interface Props {
   pathContext: PathContext;
 }
 
-const PostPage = (props: Props) => {
+export default (props: Props) => {
   const { prev, next } = props.pathContext;
   const post = props.data.markdownRemark;
   return (
@@ -69,8 +69,6 @@ const PostPage = (props: Props) => {
     </Layout>
   );
 };
-
-export default PostPage;
 
 export const postQuery = graphql`
   query($slug: String!) {

@@ -7,7 +7,7 @@ import { Layout, Wrapper, Header, SectionTitle, Content, Title } from '../compon
 import config from '../../config/SiteConfig';
 import PageProps from '../models/PageProps';
 
-export const AllCategoryTemplate = (props: PageProps) => {
+export default (props: PageProps) => {
   const { categories } = props.pathContext;
   if (categories) {
     return (

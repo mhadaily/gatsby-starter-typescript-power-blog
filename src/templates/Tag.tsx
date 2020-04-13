@@ -6,7 +6,7 @@ import { Helmet } from 'react-helmet';
 import config from '../../config/SiteConfig';
 import { kebabCase } from 'lodash';
 
-const TagTemplate = (props: PageProps) => {
+export default (props: PageProps) => {
   const { posts, tagName } = props.pathContext;
   const totalCount = posts ? posts.length : 0;
   const subline = `${totalCount} post${totalCount === 1 ? '' : 's'} tagged with "${tagName}"`;
@@ -41,5 +41,3 @@ const TagTemplate = (props: PageProps) => {
     </Layout>
   );
 };
-
-export default TagTemplate;
