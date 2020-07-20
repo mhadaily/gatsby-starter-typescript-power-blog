@@ -79,7 +79,7 @@
     "gatsby": "^2.20.18",
     "gatsby-image": "^2.3.2",
     "gatsby-plugin-google-tagmanager": "^2.2.1",
-    "lodash": "^4.17.15",
+    "lodash": "^4.17.19",
     "polished": "^3.5.1",
     "prismjs": "^1.20.0",
     "react": "^16.13.1",
