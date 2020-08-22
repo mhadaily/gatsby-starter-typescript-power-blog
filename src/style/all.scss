@@ -38,4 +38,26 @@ $blue: #017ac7;
 $duration: 400ms;
 $easing: ease;
 
+//Key frames
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+@keyframes slide {
+  0% {
+    transform: translateX(-50rem) rotateZ(0deg);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0px) rotateZ(0deg);
+    opacity: 1;
+  }
+}
+
 // import everything here

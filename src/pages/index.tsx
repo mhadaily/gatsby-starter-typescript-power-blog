@@ -12,6 +12,7 @@ const Homepage = styled.main`
   display: flex;
   height: 100vh;
   flex-direction: row;
+  animation: 1.5s ease-in-out 0.2s both slide;
   @media ${media.tablet} {
     height: 100%;
     flex-direction: column;
@@ -51,6 +52,7 @@ const GridRow: any = styled.div`
 const HomepageContent = styled.div<{ center?: boolean }>`
   max-width: 30rem;
   text-align: ${(props) => (props.center ? 'center' : 'left')};
+  animation: 1.5s ease-in-out 0.6s both fadeIn;
 `;
 
 export default ({ data }: PageProps) => {
